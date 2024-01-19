@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.page-header{
+    position: relative;
+    height: 110px;
+}
+.header-icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+.page-mainer{
+    height: 645px;
+    background-image: url(file:///Users/lancer_x/Desktop/AntD-Admin/img/bg.svg);
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: content-box;
+}
+.mainer-title-box{
+    margin: 17px auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainer-logo{
+    width: 46px;
+    height: 46px;
+    margin-right: 17px;
+}
+.mainer-title{
+    font-size: 33px;
+    font-weight: 800;
+    font-family: Avenir;
+    line-height: 38px;
+    letter-spacing: 0.005em;
+}
+.mainer-desc{
+    text-align: center;
+    /* font-family: Roboto; */
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #00000073;
+}
+.register-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 249px;
+    width: 368px;
+}
+.register-title{
+    display: inline-block;
+    margin-bottom: 22px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.register-input{
+    /* display: inline-flex;
+    align-items: center; */
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    width: 368px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.register-input::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.telephone-box{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 368px;
+    height: 40px;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 2px;
+}
+.telephone-district{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    width: 88px;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.85);
+    border-right: 1px solid rgba(217, 217, 217, 1);
+}
+.telephone-num{
+    text-align: center;
+    margin-right: 11px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+.telephone-arrow{
+    width: 12px;
+    height: 12px;
+}
+.register-input.example{
+    margin: 0;
+    width: 280px;
+    height: 38px;
+    border-radius: 0;
+    border: none;
+}
+
+
+.code-box{
+    display: flex;
+}
+
+.register-input.veri{
+    margin: 0;
+    width: 251px;
+}
+.code-btn{
+    margin-left: 8px;
+    width: 110px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+.register-btn-box{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.register-btn{
+    width: 196px;
+    height: 40px;
+    color: #fff;
+    background-color: rgba(24, 144, 255, 1);
+    border: 1px solid rgba(24, 144, 255, 1);
+}
+.register-desc{
+    color: rgba(24, 144, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+.page-footer{
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-desc{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.footer-logo{
+    margin: 4px 40px;
+    width: 14px;
+    height: 14px;
+}
+.footer-question{
+    position: absolute;
+    right: 77px;
+    bottom: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.question-icon{
+    text-align: center;
+    width: 14px;
+    height: 14px;
+}

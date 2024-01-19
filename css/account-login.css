@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.page-header{
+    position: relative;
+    height: 110px;
+}
+.header-icon{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+.page-mainer{
+    height: 645px;
+    background-image: url(file:///Users/lancer_x/Desktop/AntD-Admin/img/bg.svg);
+    background-clip: content-box;
+    background-size: cover;
+    background-origin: content-box;
+}
+.mainer-title-box{
+    margin: 17px auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainer-logo{
+    width: 46px;
+    height: 46px;
+    margin-right: 17px;
+}
+.mainer-title{
+    font-size: 33px;
+    font-weight: 800;
+    font-family: Avenir;
+    line-height: 38px;
+    letter-spacing: 0.005em;
+}
+.mainer-desc{
+    text-align: center;
+    /* font-family: Roboto; */
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #00000073;
+}
+.signin-section{
+    margin-top: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signin-title{
+    margin-bottom: 22px;
+    display: flex;
+    align-items: flex-start;
+    width: 360px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.signin-login{
+    margin-right: 32px;
+    width: 35px;
+    height: 32px;
+    border-bottom: 2px solid rgba(24, 144, 255, 1);
+    line-height: 22px;
+    color: rgba(24, 144, 255, 1);
+}
+.signin-signup{
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.signin-input-bg{
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    width: 360px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(217, 217, 217, 1)
+}
+.signin-logo{
+    width: 16px;
+    height: 16px;
+}
+.signin-input{
+    align-items: center;
+    width: 100%;
+    line-height: 24px;
+    border: none;
+}
+.signin-input::placeholder{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.25);
+}
+.signin-input-bg.lock{
+    margin-bottom: 22px;
+}
+.signin-choose-box{
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.choose-lf{
+    display: inline-flex;
+    align-items: center;
+}
+.choose-checkbox{
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+.choose-info{
+   color: rgba(0, 0, 0, 0.85);
+   line-height: 22px;
+}
+.choose-info.blue{
+    color: rgba(24, 144, 255, 1);
+    overflow: hidden;
+    white-space: nowrap;
+}
+.choose-btn{
+    margin-bottom: 22px;
+    width: 114px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgba(24, 144, 255, 1);
+    background-color: rgba(24, 144, 255, 1);
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+.quick-signin-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quick-signin{
+    display: flex;
+}
+.quick-icon-box{
+    margin-left: 16px;
+    width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quick-icon{
+    width: 24.5px;
+    height: 24.5px;
+}
+.quick-info.blue{
+    color: rgba(24, 144, 255, 1);
+}
+.page-footer{
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-desc{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.footer-logo{
+    margin: 4px 40px;
+    width: 14px;
+    height: 14px;
+}
+.footer-question{
+    position: absolute;
+    right: 77px;
+    bottom: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.question-icon{
+    text-align: center;
+    width: 14px;
+    height: 14px;
+}
+.login-container{
+    display: none;
+}
+.signup-input-box{
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    width: 368px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+.signup-logo{
+    width: 16px;
+    height: 16px;
+}
+.signup-input{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+}
+.signup-input::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+}
+.tele-box{
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+.tele-input-box{
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    width: 262px;
+    height: 40px;
+    /* top: 68px
+    padding: 8px, 12px, 8px, 12px */
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+.tele-input{
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+}
+.tele-input::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+}
+.signup-btn{
+    width: 114px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: #fff;
+}
+.signin-choose-box.signup{
+    width: 368px;
+}
+.signup-btn-box{
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    width: 368px;
+}
+.signup-btn-blue{
+    width: 114px;
+    height: 40px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background: rgba(24, 144, 255, 1);
+    border: 1px solid rgba(24, 144, 255, 1);
+    color: #fff;
+}
+.quick-signin-box.sigup{
+    width: 368px;
+}
