@@ -18,12 +18,13 @@
         </div>
         <div class="mainer-desc">Ant Design is the most influential web design specification in Xihu district</div>
         <div class="signin-section">
-            <form class="login-appearance" action="">
-                <div class="signin-title">
-                    <span class="signin-login">Login</span>
-                    <span class="signin-signup">Sign Up</span>
-                </div>
-                <div class="login-container">
+            <div class="signin-title" id="signin-title">
+                <span class="signin-item active" data-index="0">Login</span>
+                <span class="signin-item" data-index="1">Sign Up</span>
+            </div>
+            <!-- <form class="login-appearance" action=""> -->
+            <div class="login-content" id="login-content">
+                <div class="login-content-item active">
                     <div class="signin-input-box">
                         <div class="signin-input-bg">
                             <img class="signin-logo" src="./img/input-prefix.png" alt="">
@@ -36,7 +37,7 @@
                     </div>
                     <div class="signin-choose-box">
                         <div class="choose-lf">
-                           <input class="choose-checkbox" type="checkbox">
+                        <input class="choose-checkbox" type="checkbox">
                             <span class="choose-info">Remember me</span>
                         </div>
                         <span class="choose-info blue">Forgot your</span>
@@ -54,7 +55,7 @@
                         <span class="quick-info blue">Sign Up</span>
                     </div>
                 </div>
-                <div class="signup-container">
+                <div class="login-content-item">
                     <div class="signup-input-box">
                         <!-- <input class="signup-input" type="text" placeholder=""> -->
                         <img class="signup-logo" src="./img/input-prefix.svg" alt="">
@@ -69,7 +70,7 @@
                     </div>
                     <div class="signin-choose-box signup">
                         <div class="choose-lf">
-                           <input class="choose-checkbox" type="checkbox">
+                        <input class="choose-checkbox" type="checkbox">
                             <span class="choose-info">Remember me</span>
                         </div>
                         <span class="choose-info blue">Forgot your</span>
@@ -89,7 +90,8 @@
                         <span class="quick-info blue">Sign Up</span>
                     </div>
                 </div>
-            </form>
+            </div>
+            <!-- </form> -->
         </div>
     </div>
     <div class="page-footer">
@@ -106,7 +108,15 @@
         </div>
     </div>
     <script>
-      
+      document.getElementById('signin-title').addEventListener('click', function(e) {
+        if( event.target.className.indexOf('signin-item') >= 0){
+            let index = event.target.dataset.index;
+            document.querySelectorAll('.signin-item').forEach( e => e.setAttribute('class', 'signin-item'));
+            document.querySelectorAll('.login-content-item').forEach( e => e.setAttribute('class', 'login-content-item'));
+            document.querySelectorAll('.signin-item')[index].setAttribute('class', 'signin-item active');
+            document.querySelectorAll('.login-content-item')[index].setAttribute('class', 'login-content-item active');
+        }
+    });
     </script>
 </body>
 </html>

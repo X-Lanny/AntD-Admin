@@ -74,17 +74,26 @@ a{
     width: 360px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
-.signin-login{
+.signin-item{
     margin-right: 32px;
-    width: 35px;
+    /* width: 35px; */
     height: 32px;
-    border-bottom: 2px solid rgba(24, 144, 255, 1);
-    line-height: 22px;
-    color: rgba(24, 144, 255, 1);
-}
-.signin-signup{
     line-height: 22px;
     color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+.signin-item.active{
+    /* margin-right: 32px;
+    width: 35px;
+    height: 32px; */
+    border-bottom: 2px solid rgba(24, 144, 255, 1);
+    color: rgba(24, 144, 255, 1);
+}
+.login-content-item{
+    display: none;
+}
+.login-content-item.active{
+    display: block;
 }
 .signin-input-bg{
     margin-bottom: 28px;
@@ -210,9 +219,9 @@ a{
     width: 14px;
     height: 14px;
 }
-.login-container{
+/* .login-container{
     display: none;
-}
+} */
 .signup-input-box{
     margin-bottom: 28px;
     display: flex;
