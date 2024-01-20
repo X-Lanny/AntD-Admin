@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+.page-mainer{
+    display: flex;
+}
+.workplace-section{
+    width: 100%;
+    height: 100%;
+}
+.workplace-hd{
+    padding: 12px 24px 16px;
+    height: 190px;
+    width: inherit;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-content-box{
+    display: flex;
+    justify-content: space-between;
+}
+.current-content{
+    display: flex;
+}
+.current-img{
+    border-radius: 50%;
+}
+.current-desc{
+    margin-left: 24px;
+}
+.current-subtitle{
+    margin-top: 5px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.current-info{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-num-box{
+    margin-left: 25px;
+    margin-right: 4px;
+    height: 64px;
+    display: flex;
+    text-align: center;
+}
+.current-num-item{
+    height: 64px;
+}
+.current-num-title{
+    margin-bottom: 9px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.45);
+    white-space: nowrap;
+}
+.current-num{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-num.small{
+    font-size: 16px;
+    line-height: 24px;
+}
+.current-line{
+    margin: auto 32px;
+    width: 1px;
+    height: 32px;
+    background-color:  rgba(0, 0, 0, 0.06);
+}
