@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form-hd{
+    padding: 16px 24px;
+    width: 100%;
+    height: 194px;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-break{
+    margin: 0 8px;
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-desc{
+    line-height: 17px;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-section{
+    min-width: 1180px;
+    width: 100%;
+    overflow-y: auto;
+    height: 852px;
+}
+.form-content-container{
+    margin: 24px;
+    /* width: 100%; */
+    /* 不写上一行 */
+}
+.form-content{
+    width: 100%;
+}
+.form-content-top{
+    height: 100%;
+    padding: 24px;
+    background-color: #fff;
+}
+.form-hd-input-container{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-hd-input-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 418px;
+    height: 40px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-hd-input{
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    border: none;
+}
+.form-hd-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 104px;
+    height: 40px;
+    border-radius: 1px;
+    border: none;
+    background-color: rgba(24, 144, 255, 1);
+    color: #fff;
+}
+.form-btn-icon{
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+}
+.form-hd-tag-container{
+    display: flex;
+    height: 40px;
+}
+.form-hd-tag-box{
+    margin-right: 32px;
+    height: 40px;
+}
+.form-hd-tag-box.active{
+    height: 40px;
+    border-bottom: 2px solid rgba(24, 144, 255, 1);
+}
+.form-hd-tag{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.form-hd-tag.active{
+    color: rgba(24, 144, 255, 1);
+}
+.form-category{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+.form-category-if{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-category-title{
+    margin-right: 24px;
+}
+.form-category-other{
+    margin-right: 32px;
+}
+.form-category-options{
+    margin-right: 8px;
+}
+.category-item-box{
+    margin-right: 24px;
+    width: 146px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.category-item{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 0 8px;
+}
+.category-item.owner{
+    margin: 4px 0 4px 4px;
+    background-color: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(240, 240, 240, 1);
+}
+.category-item-name{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.category-item-expand{
+    color: rgba(24, 144, 255, 1);
+}
+.form-category-ri{
+    display: flex;
+    align-items: center;
+}
+.category-item-icon{
+    height: 10px;
+    width: 10px;
+}
+.category-item-wrapper{
+    margin-left: 4px;
+    width: 10px;
+    height: 14px;
+}
+.form-category.owner{
+    margin-bottom: 0;
+    justify-content: flex-start;
+}
+.form-category-select-box{
+    margin-right: 26px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-category-arrow{
+    width: 12px;
+    height: 12px;
+}
+.form-category-select{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.form-content-bottom{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 16px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin-top: 24px;
+}
+@media (min-width:1600px){
+    .form-content-bottom{
+        grid-template-columns: repeat(5 ,1fr);
+    }
+}
+@media (min-width:2400px){
+    .form-content-bottom{
+        grid-template-columns: repeat(8 ,1fr);
+    }
+}
+.form-item{
+    /* margin-bottom: 16px;
+    margin-right: 16px; */
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    height: 324px;
+    background: #fff;
+    border-radius: 2px;
+}
+/* .form-item:nth-child(4n){
+    margin-right: 0;
+} */
+.form-item-img{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border: 1px solid rgba(240, 240, 240, 1);
+    border-bottom: none;
+    width: 100%;
+    height: 100%;
+}
+.form-item-info{
+    position: relative;
+    padding: 24px;
+    background: #fff;
+}
+.form-item-title{
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.form-item-desc{
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.form-item-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size:  14px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-item-time-img.avatar2{
+    position: absolute;
+    right: 72px;
+    bottom: 24px;
+}
+.form-item-time-img.avatar{
+    position: absolute;
+    right: 48px;
+    bottom: 24px;
+}
+.form-item-time-img{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;    
+}
+

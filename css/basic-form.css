@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form-hd{
+    padding: 16px 24px;
+    width: 100%;
+    height: 131px;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-break{
+    margin: 0 8px;
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-desc{
+    line-height: 17px;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-section{
+    height: 852px;
+    overflow-y: auto;
+    min-width: 1050px;
+    width: 100%;
+}
+.form-content-container{
+    margin: 20px 24px 0 24px;
+}
+.form-content{
+    width: 100%;
+    background-color: #fff;
+}
+.form-question-box{
+    padding: 24px;
+    margin-right: calc(50vw - 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.form-question{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.form-question.large{
+    align-items: flex-start;
+}
+.form-title{
+    margin: 5px 8px 5px 0;
+}
+.form-title::after{
+    margin-left: 4px;
+    content: ":";
+}
+.form-input-box{
+    display: flex;
+    align-items: center;
+    width: 484px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-input{
+    padding: 5px 12px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.form-input::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.form-input-container{
+    width: 484px;
+    height: 76px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-input-para{
+    padding: 5px 12px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.form-input-para::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; 
+}
+.form-title-box{
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    height: 22px;
+    margin: 5px 8px 5px 0;
+}
+.form-title.optional{
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.form-title.optional::after{
+    content: "";
+}
+.form-icon{
+    margin: 0 4px;
+    width: 14px;
+    height: 14px;
+}
+.form-title.optional.gray{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-title.optional.gray::after{
+    content: ":";
+}
+.form-input-box.weight{
+    width: 78px;
+}
+.form-input-symbol-box{
+    margin-right: 387px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.form-input-symbol-box::after{
+    margin-left: 8px;
+    content: "%";
+}
+.form-radio-container{
+    margin-right: 189px;
+}
+.form-radio-box{
+    margin-right: 16px;
+}
+.form-radio{
+    border: 1px solid rgba(24, 144, 255, 1);
+}
+.form-desc{
+    margin-bottom: 24px;
+    margin-right: 190px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-btn-box{
+    margin-right: 337px;
+}
+.submit-btn{
+    margin-right: 8px;
+    width: 77px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(24, 144, 255, 1);
+    background: rgba(24, 144, 255, 1);
+    color: #fff;
+}
+.save-btn{
+    width: 62px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    background-color: #fff;
+}

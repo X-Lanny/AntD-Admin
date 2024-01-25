@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/search-table.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="header-lf">
+            <img class="header-logo" src="./img/logo.png" alt="">
+            <h1 class="header-title">Ant Design Pro</h1>
+        </div>
+        <ul class="header-ri-list">
+            <li class="header-ri-item">
+                <img src="./img/Search.png" alt="">
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/QuestionCircle.png" alt="">
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/icon.png" alt="">
+                <div class="header-ri-num">11</div>
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/Rectangle 378.png" alt="">
+                <span class="header-ri-name">Serati Ma</span>
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/Vector copy.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="page-mainer">
+        <div class="mainer-container">
+            <div class="mainer-nav">
+                <ul class="mainer-nav-list" id="mainer-nav-list">
+                    <li class="mainer-nav-item" data-index="0">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="1">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>Form</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item active" data-index="2">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>List</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                        <div class="nav-sublist active">
+                            <div class="nav-subitem">Search List
+                            </div>
+                            <div class="nav-subitem active">Search Table</div>
+                            <div class="nav-subitem">Basic List</div>
+                            <div class="nav-subitem">Card List</div>
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="2">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 1.png" alt="">
+                                <span>Profile</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div> 
+                    </li>
+                    <li class="mainer-nav-item" data-index="3">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 2.png" alt="">
+                                <span>Result</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="4">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 3.png" alt="">
+                                <span>Exception</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">  
+                        </div>    
+                    </li>
+                    <li class="mainer-nav-item" data-index="5">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 4.png" alt="">
+                                <span>Account</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="6">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 5.png" alt="">
+                                <span>Graphic Editor</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="mainer-bottom">
+                    <img class="mainer-bottom-icon" src="./img/MenuFold.png" alt="">
+                </div>
+            </div>
+            <div class="mainer-nav short">
+                <ul class="mainer-nav-list">
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 3.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 4.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 5.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="mainer-bottom">
+                    <img class="mainer-bottom-icon" src="./img/MenuFold.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-hd">
+                <div class="current-nav-list">
+                    <a href="">
+                        <span class="current-item">Home</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item">List</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item">Search List</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item active">Search Table</span>
+                    </a>
+                </div>
+                <div>
+                    <h2 class="current-title">Search Table</h2>
+                </div>
+            </div>
+            <div class="form-content-container">
+                <div class="form-content">
+                    <div class="form-content-top">
+                        <div class="form-content-top-box">
+                            <div class="form-question-container">
+                                <div class="form-question-box">
+                                    <span class="form-question">Rule Name</span>
+                                    <img class="form-icon" src="./img/QuestionCircle copy.png" alt="">
+                                    <span class="form-question">:</span>
+                                </div>
+                                <div class="form-input-box">
+                                    <input class="form-input" type="text" name="" id="" placeholder="Please enter">
+                                </div>
+                                <div class="form-question-box description">
+                                    <span class="form-question">Description:</span>
+                                </div>
+                                <div class="form-input-box desc">
+                                    <input class="form-input" type="text" name="" id="" placeholder="Please enter">
+                                </div>
+                                <button class="form-btn">Reset</button>
+                                <button class="form-btn blue">Query</button>
+                            </div>
+                            <div class="form-category-ri">
+                                <span class="category-item-expand">Expand</span>
+                                <img class="category-item-wrapper" src="./img/icon-wrapper.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content-bottom">
+                        <div class="form-bt-title-box">
+                            <div class="form-bt-title">Search Table</div>
+                            <div class="form-bt-other">
+                                <div class="form-bt-select-box">
+                                    <select class="form-bt-select" name="" id="">
+                                        <option value="1">Application Name</option>
+                                        <option value="2"></option>
+                                    </select>
+                                    <img class="form-bt-arrow" src="./img/Down.svg" alt="">
+                                </div>
+                                <button class="form-bt-btn">View Log</button>
+                                <button class="form-bt-btn-blue">
+                                    <img class="form-bt-btn-icon" src="./img/Plus.png" alt="">
+                                    Add New
+                                </button>
+                                <div class="form-bt-icon-box">
+                                    <img class="form-bt-icon" src="./img/Icon-Wrapper copy 5.svg" alt="">
+                                    <img class="form-bt-icon" src="./img/Icon-Wrapper copy 4.svg" alt="">
+                                    <img class="form-bt-icon" src="./img/Icon-Wrapper copy 3.svg" alt="">
+                                    <img class="form-bt-icon" src="./img/Icon-Wrapper copy 2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                       <div>
+                        <table>
+                            <thead class="tb-header-box">
+                                <tr class="tb-header">
+                                    <th class="tb-hd-checkbox">
+                                        <input type="checkbox">
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-rule">Rule Name
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-desc">Description
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-service">
+                                        <span>Service Calls</span>
+                                        <img src="./img/_sorter.svg" alt="">
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-status">
+                                        <span>Status</span>
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-time">Last Dispatch Time
+                                        <img src="./img/_sorter.svg" alt="">
+                                        <span class="tb-hd-line"></span>
+                                    </th>
+                                    <th class="tb-hd-action">Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 99</td>
+                                    <td class="tb-td-desc">Vel cras auctor at tortor imperdiet amet id sed rhoncus.</td>
+                                    <td class="tb-td-service">3,638,066</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot online"></span>
+                                        <span>Online</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-05 08:28:36</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 98</td>
+                                    <td class="tb-td-desc">Quam aliquam odio ullamcorper ornare eleifend ipsum</td>
+                                    <td class="tb-td-service">6,462,020</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot offline"></span>
+                                        <span>Offline</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-03 19:49:33</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 97</td>
+                                    <td class="tb-td-desc">Mauris quam tristique et parturient sapien.</td>
+                                    <td class="tb-td-service">8,664,948</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot error"></span>
+                                        <span>Error</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-02 19:17:15</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 96</td>
+                                    <td class="tb-td-desc">Fermentum porttitor amet, vulputate ornare tortor nisi.</td>
+                                    <td class="tb-td-service">2,592,335</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot online"></span>
+                                        <span>Online</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-02 09:46:33</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 95</td>
+                                    <td class="tb-td-desc">Sed at ornare scelerisque in facilisis tincidunt</td>
+                                    <td class="tb-td-service">6,337,875</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot running"></span>
+                                        <span>Running</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-02 07:57:01</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 94</td>
+                                    <td class="tb-td-desc">Molestie est pharetra eu congue velit felis ipsum velit.</td>
+                                    <td class="tb-td-service">4,927,239</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot running"></span>
+                                        <span>Running</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-02 05:01:54</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 93</td>
+                                    <td class="tb-td-desc">Et adipiscing vitae amet mauris eget vel.</td>
+                                    <td class="tb-td-service">6,241,243</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot error"></span>
+                                        <span>Error</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-02 00:18:11</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 92</td>
+                                    <td class="tb-td-desc">Leo maecenas quis sapien morbi nunc, porta nibh.</td>
+                                    <td class="tb-td-service">1,556,493</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot offline"></span>
+                                        <span>Offline</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-02-01 11:03:33</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 91</td>
+                                    <td class="tb-td-desc">Nulla a aliquet donec curabitur risus blandit.</td>
+                                    <td class="tb-td-service">1,199,750</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot offline"></span>
+                                        <span>Offline</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-01-31 03:42:50</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                                <tr class="tb-item">
+                                    <td class="tb-td-checkbox">
+                                        <input type="checkbox">
+                                    </td>
+                                    <td class="tb-td-code">TradeCode 90</td>
+                                    <td class="tb-td-desc">Tellus eget at arcu non.</td>
+                                    <td class="tb-td-service">5,841,026</td>
+                                    <td class="tb-td-status">
+                                        <span class="tb-dot error"></span>
+                                        <span>Error</span>
+                                    </td>
+                                    <td class="tb-td-time">2021-01-31 00:44:25</td>
+                                    <td class="tb-td-action">
+                                        <span>Config</span>
+                                        <span class="tb-td-action-line">|</span>
+                                        <span>Subscription Alert</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="tb-footer">
+                            <span class="">1-10 of 100 items</span>
+                            <div class="tb-page-num-box">
+                                <div class="tb-page-num">
+                                    <img class="tb-page-arrow" src="./img/Left.svg" alt="">
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>1</span>
+                                </div>
+                                <div class="tb-page-dot">
+                                    <img class="tb-page-dot-img" src="./img/ellipsis.svg" alt="">
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>4</span>
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>5</span>
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>6</span>
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>7</span>
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>8</span>
+                                </div>
+                                <div class="tb-page-dot">
+                                    <img class="tb-page-dot-img" src="./img/ellipsis.svg" alt="">
+                                </div>
+                                <div class="tb-page-num">
+                                    <span>50</span>
+                                </div>
+                                <div class="tb-page-num">
+                                    <img class="tb-page-arrow ri" src="./img/Left.svg" alt="">
+                                </div>
+                            </div>
+                            
+                            <div class="tb-page">
+                                <span>10/page</span>
+                                <img src="./img/Down.svg" alt="">
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

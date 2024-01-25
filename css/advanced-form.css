@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form-hd{
+    padding: 16px 24px;
+    width: 100%;
+    height: 131px;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-break{
+    margin: 0 8px;
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-desc{
+    line-height: 17px;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-section{
+    height: 852px;
+    width: 100%;
+    overflow-y: auto;
+}
+.form-content-container{
+    margin: 20px 24px;
+}
+.form-content{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.form-title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -1px 0px 0px rgba(240, 240, 240, 1) inset;
+    padding: 16px 24px;
+    height: 56px;
+}
+.form-title-more{
+    color: rgba(24, 144, 255, 1);
+}
+.form-title{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.warehouse-form{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+.warehouse-form-item{
+    position: relative;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+.warehouse-item-question{
+    margin-bottom: 8px;
+}
+.warehouse-item-input{
+    width: 100%;
+    height: 100%;
+    padding: 5px 12px;
+    border-radius: 2px;
+    border: none;
+}
+.warehouse-item-input.web{
+    padding: 5px 12px;
+    width: calc(100% - 126px);
+}
+.warehouse-item-input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.25);
+}
+.form-arrow{
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    height: 12px;
+    width: 12px;
+}
+.warehouse-item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 368px;
+    height: 32px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.warehouse-item-http{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70px;
+    border-right: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(250, 250, 250, 1);
+}
+.warehouse-item-com{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 56px;
+    border-left: 1px solid rgba(217, 217, 217, 1);
+    background-color: rgba(250, 250, 250, 1);
+}
+.form-date-arrow{
+    width: 16px;
+    height: 16px;
+}
+.form-date-icon{
+    margin-right: 12px;
+    width: 14px;
+    height: 14px;
+}

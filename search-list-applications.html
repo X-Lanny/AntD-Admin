@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/search-list-applications.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="header-lf">
+            <img class="header-logo" src="./img/logo.png" alt="">
+            <h1 class="header-title">Ant Design Pro</h1>
+        </div>
+        <ul class="header-ri-list">
+            <li class="header-ri-item">
+                <img src="./img/Search.png" alt="">
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/QuestionCircle.png" alt="">
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/icon.png" alt="">
+                <div class="header-ri-num">11</div>
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/Rectangle 378.png" alt="">
+                <span class="header-ri-name">Serati Ma</span>
+            </li>
+            <li class="header-ri-item">
+                <img src="./img/Vector copy.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="page-mainer">
+        <div class="mainer-container">
+            <div class="mainer-nav">
+                <ul class="mainer-nav-list" id="mainer-nav-list">
+                    <li class="mainer-nav-item" data-index="0">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>Dashboard</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="1">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>Form</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item active" data-index="2">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                                <span>List</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                        <div class="nav-sublist active">
+                            <div class="nav-sublist-box">
+                                <div class="nav-subitem-box">
+                                    <div class="nav-subitem subactive">Search List</div>
+                                    <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                                </div>
+                                <div class="nav-childitem-list">
+                                    <div class="nav-childitem">
+                                        <div class="nav-childitem-name">Search List(articles)</div>
+                                    </div>
+                                    <div class="nav-childitem">
+                                        <div class="nav-childitem-name">Search List(projects)</div>
+                                    </div>
+                                    <div class="nav-childitem active">
+                                        <div class="nav-childitem-name active">Search List(application)</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-subitem">Search Table</div>
+                            <div class="nav-subitem">Basic List</div>
+                            <div class="nav-subitem">Card List</div>
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="2">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 1.png" alt="">
+                                <span>Profile</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div> 
+                    </li>
+                    <li class="mainer-nav-item" data-index="3">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 2.png" alt="">
+                                <span>Result</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="4">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 3.png" alt="">
+                                <span>Exception</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">  
+                        </div>    
+                    </li>
+                    <li class="mainer-nav-item" data-index="5">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 4.png" alt="">
+                                <span>Account</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item" data-index="6">
+                        <div class="nav-item-title">
+                            <div>
+                                <img class="nav-item-icon" src="./img/wrapper 5.png" alt="">
+                                <span>Graphic Editor</span>
+                            </div>
+                            <img class="nav-item-arrow" src="./img/right side icon.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="mainer-bottom">
+                    <img class="mainer-bottom-icon" src="./img/MenuFold.png" alt="">
+                </div>
+            </div>
+            <div class="mainer-nav short">
+                <ul class="mainer-nav-list">
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper copy.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 3.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 4.png" alt="">
+                        </div>
+                    </li>
+                    <li class="mainer-nav-item short">
+                        <div>
+                            <img class="nav-item-icon" src="./img/wrapper 5.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="mainer-bottom">
+                    <img class="mainer-bottom-icon" src="./img/MenuFold.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-hd">
+                <div class="current-nav-list">
+                    <a href="">
+                        <span class="current-item">Home</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item">List</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item">Search List</span>
+                    </a>
+                    <span class="current-break">/</span>
+                    <a href="">
+                        <span class="current-item active">Search List(applications)</span>
+                    </a>
+                </div>
+                <div>
+                    <h2 class="current-title">Search List(applications)</h2>
+                </div>
+                <div class="form-hd-input-container">
+                    <div class="form-hd-input-box">
+                        <input class="form-hd-input" type="text" placeholder="input search text">
+                        <button class="form-hd-btn">
+                            <img class="form-btn-icon" src="./img/wrapper copy 2.svg" alt="">
+                            <span class="">Search</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-hd-tag-container">
+                    <div class="form-hd-tag-box">
+                        <span class="form-hd-tag">Articles</span>
+                    </div>
+                    <div class="form-hd-tag-box">
+                        <span class="form-hd-tag active">Projects</span>
+                    </div>
+                    <div class="form-hd-tag-box active">
+                        <span class="form-hd-tag">Applications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content-container">
+                <div class="form-content">
+                    <div class="form-content-top">
+                        <div class="form-category">
+                            <div class="form-category-if">
+                                <span class="form-category-title">Category :</span>
+                                <div class="category-item">
+                                    <span class="category-item-name">All</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 1</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 2</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 3</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 4</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 5</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 6</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 7</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 8</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                                <div class="category-item">
+                                    <span class="category-item-name">Category 9</span>
+                                    <img class="category-item-icon" src="./img/Close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="form-category-ri">
+                                <span class="category-item-expand">Expand</span>
+                                <img class="category-item-wrapper" src="./img/icon-wrapper.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="form-category-line"></div>
+                        <div class="form-category owner">
+                            <span class="form-category-other">Other Options :</span>
+                            <span class="form-category-options">Author :</span>
+                            <div class="form-category-select-box">
+                                <select class="form-category-select" name="" id="" >
+                                    <option value="">Unlimited</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <img class="form-category-arrow" src="./img/Down.svg" alt="">
+                            </div>
+                            <span class="form-category-options">Ratings :</span>
+                            <div class="form-category-select-box">
+                                <select class="form-category-select" name="" id="" >
+                                    <option value="">Unlimited</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <img class="form-category-arrow" src="./img/Down.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content-bottom">
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-top">
+                                <div>
+                                    <img class="form-item-img" src="./img/Image.png" alt="">
+                                </div>
+                                <div>
+                                    <div class="form-item-title">Alipay</div>
+                                    <div class="form-item-desc">
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">Active users</div>
+                                            <div class="form-item-num">130,000</div>
+                                        </div>
+                                        <div class="form-item-info">
+                                            <div class="form-item-subtitle">New users</div>
+                                            <div class="form-item-num">1,914</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-item-line"></div>
+                            <div class="form-item-bottom">
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Download.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/Edit.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/ShareAlt.png" alt="">
+                                </div>
+                                <div class="form-item-icon-box">
+                                    <img class="form-item-icon" src="./img/More.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

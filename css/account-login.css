@@ -19,6 +19,9 @@ body{
 a{
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 .page-header{
     position: relative;
     height: 110px;
@@ -55,7 +58,6 @@ a{
 }
 .mainer-desc{
     text-align: center;
-    /* font-family: Roboto; */
     line-height: 22px;
     letter-spacing: 0em;
     color: #00000073;
@@ -76,16 +78,12 @@ a{
 }
 .signin-item{
     margin-right: 32px;
-    /* width: 35px; */
     height: 32px;
     line-height: 22px;
     color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
 }
 .signin-item.active{
-    /* margin-right: 32px;
-    width: 35px;
-    height: 32px; */
     border-bottom: 2px solid rgba(24, 144, 255, 1);
     color: rgba(24, 144, 255, 1);
 }
@@ -111,6 +109,7 @@ a{
 }
 .signin-input{
     align-items: center;
+    height: 100%;
     width: 100%;
     line-height: 24px;
     border: none;
@@ -219,9 +218,6 @@ a{
     width: 14px;
     height: 14px;
 }
-/* .login-container{
-    display: none;
-} */
 .signup-input-box{
     margin-bottom: 28px;
     display: flex;
@@ -260,8 +256,6 @@ a{
     padding: 8px 12px;
     width: 262px;
     height: 40px;
-    /* top: 68px
-    padding: 8px, 12px, 8px, 12px */
     border-radius: 2px;
     border: 1px solid rgba(217, 217, 217, 1);
     background-color: rgba(255, 255, 255, 1);

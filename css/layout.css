@@ -24,6 +24,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     background: rgba(0, 21, 41, 1);
     height: 48px;
 }
@@ -36,10 +37,12 @@ a{
     width: 32px;
 }
 .header-title{
+    margin-left: 12px;
     height: 32px;
     font-size: 18px;
     font-weight: 700;
     line-height: 32px;
+    color: #fff;
 }
 .header-ri-list{
     display: flex;
@@ -76,6 +79,7 @@ a{
     background: rgba(240, 242, 245, 1);
 }
 .mainer-nav{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,15 +87,20 @@ a{
     width: 208px;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
-    /* z-index: 1000; */
-}
-.mainer-nav-item:hover{
-    color: rgba(24, 144, 255, 1);
-    background: rgba(230, 247, 255, 1);
-    border-right: 3px solid rgba(24, 144, 255, 1);
+    z-index: 1000;
+    /* z-index 只对定位元素有效。 */
 }
 .mainer-nav-item.active{
     color: rgba(24, 144, 255, 1);
+}
+.mainer-nav-item.active:hover{
+    color: rgba(0, 0, 0, 0.85);
+    background: rgba(255, 255, 255, 1);
+    border-right: none;
+}
+.nav-item-arrow{
+    height: 9px;
+    width: 10px;
 }
 .mainer-nav-item.active .nav-item-arrow{
     transform: rotateX(180deg);
@@ -109,12 +118,19 @@ a{
     flex-direction: column;
 }
 .nav-item-title{
+    margin: 4px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
     width: 208px;
     height: 40px;
+    cursor: pointer;
+}
+.nav-item-title:hover{
+    color: rgba(24, 144, 255, 1);
+    background: rgba(230, 247, 255, 1);
+    border-right: 3px solid rgba(24, 144, 255, 1);
 }
 .nav-item-icon{
     margin-right: 10px;
@@ -131,18 +147,62 @@ a{
     width: 16px;
     height: 16px;
 }
+.nav-subitem-box{
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 208px;
+}
 .nav-subitem{
+    margin: 4px 0;
     padding-left: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 208px;
     height: 40px;
-    background: rgba(240, 242, 245, 1);
     color: rgba(0, 0, 0, 0.85);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .nav-subitem.active{
-    color: rgba(24, 144, 255, 1);
+    color: rgba(24, 144, 255, 1); 
     background: rgba(230, 247, 255, 1);
     border-right: 3px solid rgba(24, 144, 255, 1);
+}
+.nav-subitem.subactive{
+    color: rgba(24, 144, 255, 1);
+}
+.nav-sublist-box{
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nav-childitem-list{
+    width: 208px;
+    background: rgb(255,255,255);
+}
+.nav-childitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+.nav-childitem.active{
+    background: rgba(230, 247, 255, 1);
+    border-right: 3px solid rgba(24, 144, 255, 1);
+}
+.nav-childitem-name{
+    margin: 4px 13px 4px 64px;
+    color: rgba(0, 0, 0, 0.85);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.nav-childitem-name.active{
+    color: rgba(24, 144, 255, 1);
 }

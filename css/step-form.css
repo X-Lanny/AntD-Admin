@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form-hd{
+    padding: 16px 24px;
+    width: 100%;
+    height: 131px;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-break{
+    margin: 0 8px;
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-desc{
+    line-height: 17px;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-section{
+    height: 852px;
+    min-width: 900px;
+    width: 100%;
+    overflow-y: auto;
+}
+.form-content-container{
+    margin: 24px;
+    /* width: 100%; */
+    /* 不写上一行 */
+}
+.form-content{
+    width: 100%;
+    background-color: #fff;
+}
+.form-question-box{
+    margin-right: calc(50vw - 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.form-step{
+    padding-top: 24px;
+    margin: 16px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-step-item{
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+.form-step-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(24, 144, 255, 1);
+}
+.form-step-circle.active{
+    color: #fff;
+    background: rgba(24, 144, 255, 1);
+}
+.form-step-title{
+    margin: auto 8px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-step-title.past{
+    color: rgba(0, 0, 0, 0.85);
+}
+.form-step-line{
+    margin-left: 8px;
+    width: 190.5px;
+    height: 1px;
+    background-color: rgba(240, 240, 240, 1)
+}
+.form-step-line.past{
+    background-color: rgba(24, 144, 255, 1);
+}
+.form-step-circle.next{
+    color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.form-question{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.form-question.large{
+    align-items: flex-start;
+}
+.form-title{
+    margin: 5px 8px 5px 0;
+}
+.form-title::after{
+    margin-left: 4px;
+    content: ":";
+}
+.form-input-box{
+    display: flex;
+    align-items: center;
+    width: 382px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-input-box.select{
+    padding: 5px 12px;
+}
+.form-option{
+    width: 382px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-input{
+    padding: 5px 12px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.form-input-paymethod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 1px solid rgba(217, 217, 217, 1);
+}
+.form-paymethod{
+    margin-right: 11px;
+    margin-left: 12px;
+}
+.form-arrow{
+    margin-right: 12px;
+    height: 12px;
+    width: 12px;
+}
+.dollar-sign{
+    margin-left: 12px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-input::placeholder{
+   color: rgba(0, 0, 0, 0.85);
+}
+.form-btn-box{
+    margin-right: 305px;
+}
+.submit-btn{
+    width: 77px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid rgba(24, 144, 255, 1);
+    background: rgba(24, 144, 255, 1);
+    color: #fff;
+}
+.form-separate-line{
+    width: 100%;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+.form-step-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 56px;
+}
+.form-step-desc{
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-desc-title{
+    margin-bottom: 12px;
+}
+.form-desc-info{
+    margin-bottom: 12px;
+}
+.form-desc-para{
+    margin-top: 4px;
+}

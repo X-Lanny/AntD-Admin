@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{ 
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Medium.ttf");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji';
+    font-size: 14px;
+    font-weight: 400; 
+    background: #F0F2F5;
+    color: #000;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form-hd{
+    padding: 16px 24px;
+    width: 100%;
+    height: 194px;
+    background-color: #fff;
+}
+.current-nav-list{
+    color: rgba(0, 0, 0, 0.45);
+}
+.current-break{
+    margin: 0 8px;
+}
+.current-item{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.current-item.active{
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.current-desc{
+    line-height: 17px;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-section{
+    min-width: 1180px;
+    width: 100%;
+    overflow-y: auto;
+    height: 852px;
+}
+.form-content-container{
+    margin: 24px;
+    /* width: 100%; */
+    /* 不写上一行 */
+}
+.form-content{
+    width: 100%;
+    background-color: #fff;
+}
+.form-content-top{
+    padding: 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.form-hd-input-container{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-hd-input-box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 418px;
+    height: 40px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-hd-input{
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+    border: none;
+}
+.form-hd-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    width: 104px;
+    height: 40px;
+    border-radius: 1px;
+    border: none;
+    background-color: rgba(24, 144, 255, 1);
+    color: #fff;
+}
+.form-btn-icon{
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+}
+.form-hd-tag-container{
+    display: flex;
+    height: 40px;
+}
+.form-hd-tag-box{
+    margin-right: 32px;
+    height: 40px;
+}
+.form-hd-tag-box.active{
+    height: 40px;
+    border-bottom: 2px solid rgba(24, 144, 255, 1);
+}
+.form-hd-tag{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.form-hd-tag.active{
+    color: rgba(24, 144, 255, 1);
+}
+.form-category{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+.form-category-if{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-category-title{
+    margin-right: 24px;
+}
+.form-category-other{
+    margin-right: 20px;
+}
+.form-category-options{
+    margin-right: 8px;
+}
+.category-item-box{
+    margin-right: 24px;
+    width: 146px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.category-item{
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    padding: 0 8px;
+}
+.category-item.owner{
+    margin: 4px 0 4px 4px;
+    background-color: rgba(245, 245, 245, 1);
+    border: 1px solid rgba(240, 240, 240, 1);
+}
+.category-item-name{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.category-item-expand{
+    color: rgba(24, 144, 255, 1);
+}
+.form-category-ri{
+    display: flex;
+    align-items: center;
+}
+.category-item-icon{
+    height: 10px;
+    width: 10px;
+}
+.category-item-wrapper{
+    margin-left: 4px;
+    width: 10px;
+    height: 14px;
+}
+.form-category.owner{
+    justify-content: flex-start;
+}
+.form-category-select-box{
+    margin-right: 50px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 32px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+.form-category-arrow{
+    width: 12px;
+    height: 12px;
+}
+.form-category-select{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.form-content-bottom{
+    padding: 8px 32px 12px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.form-item{
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 236px;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
+}
+.form-item-title{
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.form-item-tag-box{
+    margin-bottom: 16px;
+    display: flex;
+}
+.form-item-tag{
+    margin-right: 8px;
+    padding:  1px 8px;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 2px;
+}
+.form-item-name{
+    margin-right: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.form-item-desc{
+    margin-bottom: 16px;
+    line-height: 22px;
+    color: rgba(51, 51, 51, 1);
+}
+.form-item-info{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+.form-item-img{
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+.form-item-pay{
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-item-pay.blue{
+    color: rgba(24, 144, 255, 1);
+}
+.form-item-pay.time{
+    margin-left: 16px;
+}
+.form-item-num-box{
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.form-item-num.icon{
+    margin-left: 16px;
+}
+.form-icon{
+    margin-right: 8px;
+    height: 14px;
+    width: 14px;
+}
+.form-num{
+    padding-right: 16px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.form-num.line{
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+.form-btn-box{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-btn-load{
+    width: 114px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(217, 217, 217, 1);
+}
