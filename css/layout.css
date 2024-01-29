@@ -15,11 +15,14 @@ body{
     font-weight: 400; 
     background: #F0F2F5;
     color: #000;
+    height: 100vh;
+    /* 100vh 表示视口（viewport）的高度，即浏览器窗口的可视区域的高度。因此，这条规则将元素的高度设置为浏览器窗口高度的 100%。 */
 }
 a{
     text-decoration: none;
 }
 .page-header{
+    position: fixed;
     padding: 0 16px;
     display: flex;
     align-items: center;
@@ -75,27 +78,39 @@ a{
     color: #fff;
     border-radius: 10px;
 }
-.page-mainer{
-    background: rgba(240, 242, 245, 1);
-}
 .mainer-nav{
     position: relative;
+    padding-top: 48px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 852px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px #00000026;
+    z-index: 1;
+}
+.expand{
     width: 208px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    /* z-index 只对定位元素有效。 */
+}
+.nav-hidden{
+    display: none;
+}
+.mainer-nav-list{
+    padding: 4px 0px;
+    overflow: hidden auto;
+    flex: 1 1 0%;
+}
+.mainer-nav-item{
+    width: 208px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .mainer-nav-item.active{
     color: rgba(24, 144, 255, 1);
 }
 .mainer-nav-item.active:hover{
     color: rgba(0, 0, 0, 0.85);
-    background: rgba(255, 255, 255, 1);
     border-right: none;
 }
 .nav-item-arrow{
@@ -109,14 +124,9 @@ a{
     display: none;
     width: 47px;
 }
-.mainer-nav-item.short{
+/* .mainer-nav-item.short{
     width: 47px;
-}
-.mainer-nav-item{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+} */
 .nav-item-title{
     margin: 4px 0;
     display: flex;
@@ -147,6 +157,13 @@ a{
     width: 16px;
     height: 16px;
 }
+.mainer-bottom-icon:active .mainer-nav.short{
+    display: flex;
+}
+.mainer-bottom-icon:active .mainer-nav{
+    display: none;
+}
+
 .nav-subitem-box{
     padding-right: 16px;
     display: flex;
@@ -184,7 +201,6 @@ a{
 }
 .nav-childitem-list{
     width: 208px;
-    background: rgb(255,255,255);
 }
 .nav-childitem{
     display: flex;

@@ -15,7 +15,9 @@ body{
     font-weight: 400; 
     background: #F0F2F5;
     color: rgba(0, 0, 0, 0.85);
-    overflow: hidden;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 a{
     text-decoration: none;
@@ -24,6 +26,11 @@ button{
     cursor: pointer;
 }
 .page-mainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.page-wrapper{
     display: flex;
     width: 100%;
     height: 100%;
@@ -61,14 +68,33 @@ button{
     color: rgba(51, 51, 51, 1);
 }
 .form-section{
-    height: 852px;
-    overflow-y: auto;
-    min-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
     width: 100%;
 }
 .form-content-container{
-    margin: 20px 24px 0 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
 }
+.form-content-container::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+.form-content-container::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,.12);
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0,21,41,.05);
+}
+
 .form-content{
     width: 100%;
     background-color: #fff;
@@ -214,4 +240,44 @@ button{
     border-radius: 2px;
     border: 1px solid rgba(217, 217, 217, 1);
     background-color: #fff;
+}
+.page-footer{
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-desc{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.footer-logo{
+    margin: 4px 40px;
+    width: 14px;
+    height: 14px;
+}
+.footer-question{
+    position: absolute;
+    right: 77px;
+    bottom: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.question-icon{
+    text-align: center;
+    width: 14px;
+    height: 14px;
 }

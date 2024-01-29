@@ -15,7 +15,9 @@ body{
     font-weight: 400; 
     background: #F0F2F5;
     color: rgba(0, 0, 0, 0.85);
-    overflow: hidden;
+    height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 a{
     text-decoration: none;
@@ -29,10 +31,13 @@ button{
     height: 100%;
 }
 .form-section{
-    min-width: 1151px;
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
     width: 100%;
-    overflow-y: auto;
-    height: 852px;
+    overflow: hidden;
 }
 .form-hd{
     padding: 16px 24px;
@@ -64,7 +69,21 @@ button{
     color: rgba(0, 0, 0, 0.85);
 }
 .form-content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
     margin: 24px 0 0 24px;
+    overflow-y: auto;
+}
+.form-content-container::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+.form-content-container::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,.12);
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0,21,41,.05);
 }
 .form-content{
     width: 100%;
@@ -162,7 +181,6 @@ button{
     line-height: 24px;
 }
 .form-bt-other{
-    
     display: flex;
     align-items: center;
 }
@@ -403,4 +421,44 @@ button{
 }
 .tb-page-arrow.ri{
     transform: rotateZ(180deg);
+}
+.page-footer{
+    position: relative;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-desc{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-info{
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 22px;
+}
+.footer-logo{
+    margin: 4px 40px;
+    width: 14px;
+    height: 14px;
+}
+.footer-question{
+    position: absolute;
+    right: 77px;
+    bottom: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.question-icon{
+    text-align: center;
+    width: 14px;
+    height: 14px;
 }
